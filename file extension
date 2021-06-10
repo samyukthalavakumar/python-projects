@@ -1,0 +1,7 @@
+import os
+filename=(input("Input the filename:"))
+split_tup = os.path.splitext(filename)
+file_extension = split_tup[1]
+file_extension= file_extension.replace(".py", "python")
+file_extension= file_extension.replace(".","")
+print("File Extension: ", file_extension)
